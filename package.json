@@ -1,6 +1,6 @@
 {
   "name": "acs-login-url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generate login url for Windows Azure ACS",
   "main": "./lib/loginurl.js",
   "scripts": {
