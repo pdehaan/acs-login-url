@@ -1,0 +1,45 @@
+{
+  "name": "acs-login-url",
+  "version": "0.0.1",
+  "description": "Generate login url for Windows Azure ACS",
+  "main": "./lib/loginurl.js",
+  "scripts": {
+    "test": "grunt",
+    "blanket": {
+      "pattern": "acs-login-url/lib/"
+    },
+    "travis-cov": {
+      "threshold": 95
+    }
+  },
+  "keywords": [
+    "ws-federation",
+    "azure",
+    "acs",
+    "access control service",
+    "login url"
+  ],
+  "author": {
+    "name": "Jonathan Blair",
+    "email": "j.blair@blairforce1.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blairforce1/node-wsfed.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "qs": "~0.6.5"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "should": "~1.3.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "matchdep": "~0.2.0",
+    "grunt-mocha-test": "~0.7.0",
+    "blanket": "~1.1.5",
+    "travis-cov": "~0.2.4",
+    "supertest": "~0.8.0"
+  }
+}
