@@ -13,12 +13,18 @@ First, you need to initialize using your realm, ACS namespace, and chosen Identi
 
 ```
 var options = {
-	realm: 'urn:diet-board',
-	namespace: 'arapsys',
+	realm: 'urn:realm',
+	namespace: 'acs-namespace',
 	ip: 'Live'
 };
 
 var mediator = loginurl.initialize(options);
+```
+
+The options should be as you setup in your Azure ACS Relying Party. The ACS Namespace is the most significant portion of the ACS management portal URL, for example:
+
+```
+https://acs-namespace.accesscontrol.windows.net/v2/
 ```
 
 You can now use the returned object (mediator in this case) to generate the appropriate login URL by passing it the URL that you wish to return to after authentication:
