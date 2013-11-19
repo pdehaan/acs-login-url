@@ -6,7 +6,9 @@ Builds login urls for Windows Azure ACS Identity Providers (currently only Windo
 
 ## Installation
 
+```
 $ npm install acs-login-url --save
+```
 
 ## Using the library
 First, you need to initialize using your realm, ACS namespace, and chosen Identity Provider (choose either 'Live' or 'Facebook'):
@@ -33,12 +35,5 @@ You can now use the returned object (mediator in this case) to generate the appr
 var loginUrl = mediator.loginUrl('http://return-url');
 ```
 
-## License and Copyright
-Copyright (C) 2013 Jonathan Blair
+You can use the returned URL in a Sign-In anchor link (or whatever) and it will direct the user to ACS and select the correct Identity Provider. After successfully authenticated, the user will the be redirected to the return URL provided in the loginUrl call.
 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
